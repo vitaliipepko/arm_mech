@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arm">
+    
+    <xacro:include filename="$(find arm_description)/urdf/property.urdf.xacro"/>
+    <xacro:include filename="$(find arm_description)/urdf/macro.urdf.xacro"/>
+
+    <!-- Link -->
+    <link name="world_link"/>
+
+    <link name="holder_link">
+        <xacro:default_inertial mass="5"/>
+
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <box size="0.1 0.1 1.0"/>
+            </geometry>
+
+            <material name="LightGrey">
+                <color rgba="0.7 0.7 0.7 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <box size="0.1 0.1 1.0"/>
+            </geometry>
+        </collision>
+
+    </link>
+
+    <!-- Joint -->
+    <joint name="virtual_joint" type="fixed">
+        <parent link="world_link"/>
+        <child link="holder_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    
+</robot>
