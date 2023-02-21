@@ -5,6 +5,7 @@
     <xacro:include filename="$(find arm_description)/urdf/macro.urdf.xacro"/>
 
     <!-- Link -->
+    <!-- ________________________________________________________________________________ -->
     <link name="world_link"/>
 
     <link name="holder_link">
@@ -14,7 +15,7 @@
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
             
             <geometry>
-                <box size="0.1 0.1 1.0"/>
+                <mesh filename="package://arm_description/mesh/stand.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
             <material name="LightGrey">
@@ -26,17 +27,346 @@
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
             
             <geometry>
-                <box size="0.1 0.1 1.0"/>
+                <mesh filename="package://arm_description/mesh/stand.STL" scale="0.3 0.3 0.3"/>
             </geometry>
         </collision>
-
     </link>
 
+    <!-- ________________________________________________________________________________ -->
+
+    <link name="shoulder_Y_link">
+        <xacro:default_inertial mass="0.5"/>
+
+        <visual>
+            <origin xyz="0.0 0.0 -0.001" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/joint_shoulder_Y.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+
+            <material name="LightGrey">
+                <color rgba="0.7 0.7 0.7 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 -0.001" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/joint_shoulder_Y.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- ________________________________________________________________________________ -->
+
+    <link name="shoulder_X_link">
+        <xacro:default_inertial mass="0.2"/>
+
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/joint_shoulder_X.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+
+            <material name="LightGrey">
+                <color rgba="0.7 0.7 0.7 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/joint_shoulder_X.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- ________________________________________________________________________________ -->
+
+    <link name="shoulder_link">
+        <xacro:default_inertial mass="2.0"/>
+
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/shoulder.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+
+            <material name="LightGrey">
+                <color rgba="0.7 0.7 0.7 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/shoulder.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- ________________________________________________________________________________ -->
+
+    <link name="elbow_Z_link">
+        <xacro:default_inertial mass="0.5"/>
+
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/joint_elbow_Z.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+
+            <material name="LightGrey">
+                <color rgba="0.7 0.7 0.7 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/joint_elbow_Z.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- ________________________________________________________________________________ -->
+
+    <link name="elbow_X_link">
+        <xacro:default_inertial mass="0.2"/>
+
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/joint_elbow_X.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+
+            <material name="LightGrey">
+                <color rgba="0.7 0.7 0.7 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/joint_elbow_X.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- ________________________________________________________________________________ -->
+
+    <link name="forearm_link">
+        <xacro:default_inertial mass="1.2"/>
+
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/forearm.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+
+            <material name="LightGrey">
+                <color rgba="0.7 0.7 0.7 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/forearm.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+        </collision>
+    </link>
+    
+    <!-- ________________________________________________________________________________ -->
+
+    <link name="wrist_Z_link">
+        <xacro:default_inertial mass="0.2"/>
+
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/joint_wrist_Z.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+
+            <material name="LightGrey">
+                <color rgba="0.7 0.7 0.7 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/joint_wrist_Z.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+        </collision>
+    </link>
+    
+    <!-- ________________________________________________________________________________ -->
+
+    <link name="wrist_X_link">
+        <xacro:default_inertial mass="0.2"/>
+
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/joint_wrist_X.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+
+            <material name="LightGrey">
+                <color rgba="0.7 0.7 0.7 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/joint_wrist_X.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+        </collision>
+    </link>
+    
+    <!-- ________________________________________________________________________________ -->
+
+    <link name="hand_link">
+        <xacro:default_inertial mass="0.2"/>
+
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/hand.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+
+            <material name="LightGrey">
+                <color rgba="0.7 0.7 0.7 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            
+            <geometry>
+                <mesh filename="package://arm_description/mesh/hand.STL" scale="0.3 0.3 0.3"/>
+            </geometry>
+        </collision>
+    </link>
+    
+    <!-- ________________________________________________________________________________ -->
+    <!-- Link end -->
+
+
     <!-- Joint -->
+    <!-- ________________________________________________________________________________ -->
     <joint name="virtual_joint" type="fixed">
         <parent link="world_link"/>
         <child link="holder_link"/>
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </joint>
+
+    <!-- ________________________________________________________________________________ -->
+
+    <joint name="joint_shoulder_Y" type="revolute">
+        <parent link="holder_link"/>
+        <child link="shoulder_Y_link"/>
+        <origin xyz="0 -0.265 3.2" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}"/>
+    </joint>
+
+    <!-- ________________________________________________________________________________ -->
+
+    <joint name="joint_shoulder_X" type="revolute">
+        <parent link="shoulder_Y_link"/>
+        <child link="shoulder_X_link"/>
+        <origin xyz="0 -0.255 0.0" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}"/>
+    </joint>
+
+    <!-- ________________________________________________________________________________ -->
+
+    <joint name="joint_shoulder" type="fixed">
+        <parent link="shoulder_X_link"/>
+        <child link="shoulder_link"/>
+        <origin xyz="0 -0.1 0.0" rpy="0 0 0"/>
+        <axis xyz="0 0 0"/>
+    </joint>
+
+    <!-- ________________________________________________________________________________ -->
+
+    <joint name="joint_elbow_Z" type="revolute">
+        <parent link="shoulder_link"/>
+        <child link="elbow_Z_link"/>
+        <origin xyz="0 -0.105 -0.7" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}"/>
+    </joint>
+
+    <!-- ________________________________________________________________________________ -->
+
+    <joint name="joint_elbow_X" type="revolute">
+        <parent link="elbow_Z_link"/>
+        <child link="elbow_X_link"/>
+        <origin xyz="0 -0.003 -0.24" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="0" upper="${PI/2}" effort="${effort}" velocity="${velocity}"/>
+    </joint>
+    
+    <!-- ________________________________________________________________________________ -->
+
+    <joint name="joint_forearm" type="fixed">
+        <parent link="elbow_X_link"/>
+        <child link="forearm_link"/>
+        <origin xyz="0 0 -0.1" rpy="0 0 0"/>
+        <axis xyz="0 0 0"/>
+    </joint>
+
+    <!-- ________________________________________________________________________________ -->
+
+    <joint name="joint_wrist_Z" type="revolute">
+        <parent link="forearm_link"/>
+        <child link="wrist_Z_link"/>
+        <origin xyz="0.0 0.0 -0.75" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}"/>
+    </joint>
+
+    <!-- ________________________________________________________________________________ -->
+
+    <joint name="joint_wrist_X" type="revolute">
+        <parent link="wrist_Z_link"/>
+        <child link="wrist_X_link"/>
+        <origin xyz="0.0 0.0 -0.15" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}"/>
+    </joint>
+
+    <!-- ________________________________________________________________________________ -->
+
+    <joint name="joint_hand" type="fixed">
+        <parent link="wrist_X_link"/>
+        <child link="hand_link"/>
+        <origin xyz="0 -0.004 -0.25" rpy="0 0 0"/>
+        <axis xyz="0 0 0"/>
+    </joint>
+
+    <!-- ________________________________________________________________________________ -->
+    <!-- Joint end -->
+    
     
 </robot>
