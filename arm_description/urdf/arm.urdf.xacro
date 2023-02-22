@@ -18,8 +18,8 @@
                 <mesh filename="package://arm_description/mesh/stand.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="yelloworange" >
+                <color rgba="0.9882352941176471 0.6901960784313725 0.00392156862745098 1.0" />
             </material>
         </visual>
 
@@ -96,8 +96,8 @@
                 <mesh filename="package://arm_description/mesh/shoulder.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="blue" >
+                <color rgba="0.011764705882352941 0.2627450980392157 0.8745098039215686 1.0" />
             </material>
         </visual>
 
@@ -174,8 +174,8 @@
                 <mesh filename="package://arm_description/mesh/forearm.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="blue" >
+                <color rgba="0.011764705882352941 0.2627450980392157 0.8745098039215686 1.0" />
             </material>
         </visual>
 
@@ -252,8 +252,8 @@
                 <mesh filename="package://arm_description/mesh/hand.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="blue" >
+                <color rgba="0.011764705882352941 0.2627450980392157 0.8745098039215686 1.0" />
             </material>
         </visual>
 
@@ -278,8 +278,8 @@
                 <mesh filename="package://arm_description/mesh/joint_thumb.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -304,8 +304,8 @@
                 <mesh filename="package://arm_description/mesh/joint_finger.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -330,8 +330,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_thumb_1.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -356,8 +356,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_thumb_2.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -382,8 +382,8 @@
                 <mesh filename="package://arm_description/mesh/joint_finger.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -408,8 +408,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_lit_finger_1.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -434,8 +434,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_lit_finger_2.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -460,8 +460,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_lit_finger_3.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -486,8 +486,8 @@
                 <mesh filename="package://arm_description/mesh/joint_finger.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -512,8 +512,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_1.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -538,8 +538,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_2.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -564,8 +564,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_3.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -590,8 +590,8 @@
                 <mesh filename="package://arm_description/mesh/joint_finger.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -616,8 +616,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_1.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -642,8 +642,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_2.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -668,8 +668,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_3.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -694,8 +694,8 @@
                 <mesh filename="package://arm_description/mesh/joint_finger.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -720,8 +720,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_1.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -746,8 +746,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_2.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
@@ -772,8 +772,8 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_3.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
+            <material name="red" >
+                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
             </material>
         </visual>
 
