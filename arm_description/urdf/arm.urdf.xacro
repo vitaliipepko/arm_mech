@@ -18,9 +18,8 @@
                 <mesh filename="package://arm_description/mesh/stand.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="yelloworange" >
-                <color rgba="0.9882352941176471 0.6901960784313725 0.00392156862745098 1.0" />
-            </material>
+            <xacro:yelloworange_material/>
+
         </visual>
 
         <collision>
@@ -44,9 +43,7 @@
                 <mesh filename="package://arm_description/mesh/joint_shoulder_Y.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
-            </material>
+            <xacro:lightgrey_material/>
         </visual>
 
         <collision>
@@ -70,9 +67,7 @@
                 <mesh filename="package://arm_description/mesh/joint_shoulder_X.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
-            </material>
+            <xacro:lightgrey_material/>
         </visual>
 
         <collision>
@@ -96,9 +91,7 @@
                 <mesh filename="package://arm_description/mesh/shoulder.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="blue" >
-                <color rgba="0.011764705882352941 0.2627450980392157 0.8745098039215686 1.0" />
-            </material>
+            <xacro:blue_material/>
         </visual>
 
         <collision>
@@ -122,9 +115,7 @@
                 <mesh filename="package://arm_description/mesh/joint_elbow_Z.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
-            </material>
+            <xacro:lightgrey_material/>
         </visual>
 
         <collision>
@@ -148,9 +139,7 @@
                 <mesh filename="package://arm_description/mesh/joint_elbow_X.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
-            </material>
+            <xacro:lightgrey_material/>
         </visual>
 
         <collision>
@@ -174,9 +163,7 @@
                 <mesh filename="package://arm_description/mesh/forearm.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="blue" >
-                <color rgba="0.011764705882352941 0.2627450980392157 0.8745098039215686 1.0" />
-            </material>
+            <xacro:blue_material/>
         </visual>
 
         <collision>
@@ -200,9 +187,7 @@
                 <mesh filename="package://arm_description/mesh/joint_wrist_Z.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
-            </material>
+            <xacro:lightgrey_material/>
         </visual>
 
         <collision>
@@ -226,9 +211,7 @@
                 <mesh filename="package://arm_description/mesh/joint_wrist_X.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="LightGrey">
-                <color rgba="0.7 0.7 0.7 1.0"/>
-            </material>
+            <xacro:lightgrey_material/>
         </visual>
 
         <collision>
@@ -252,9 +235,7 @@
                 <mesh filename="package://arm_description/mesh/hand.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="blue" >
-                <color rgba="0.011764705882352941 0.2627450980392157 0.8745098039215686 1.0" />
-            </material>
+            <xacro:blue_material/>
         </visual>
 
         <collision>
@@ -278,9 +259,7 @@
                 <mesh filename="package://arm_description/mesh/joint_thumb.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -304,9 +283,7 @@
                 <mesh filename="package://arm_description/mesh/joint_finger.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -330,9 +307,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_thumb_1.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -356,9 +331,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_thumb_2.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -382,9 +355,7 @@
                 <mesh filename="package://arm_description/mesh/joint_finger.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -408,9 +379,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_lit_finger_1.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -434,9 +403,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_lit_finger_2.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -460,9 +427,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_lit_finger_3.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -486,9 +451,7 @@
                 <mesh filename="package://arm_description/mesh/joint_finger.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -512,9 +475,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_1.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -538,9 +499,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_2.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -564,9 +523,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_3.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -590,9 +547,7 @@
                 <mesh filename="package://arm_description/mesh/joint_finger.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -616,9 +571,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_1.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -642,9 +595,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_2.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -668,9 +619,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_3.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -694,9 +643,7 @@
                 <mesh filename="package://arm_description/mesh/joint_finger.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -720,9 +667,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_1.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -746,9 +691,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_2.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -772,9 +715,7 @@
                 <mesh filename="package://arm_description/mesh/phalanx_finger_3.STL" scale="0.3 0.3 0.3"/>
             </geometry>
 
-            <material name="red" >
-                <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-            </material>
+            <xacro:red_material/>
         </visual>
 
         <collision>
@@ -902,7 +843,7 @@
         <child link="thumb_finger_link"/>
         <origin xyz="0.057 -0.0059 -0.014" rpy="0 -0.65 0"/>
         <axis xyz="0 1 0"/>
-        <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}"/>
+        <limit lower="-${PI/35}" upper="${PI/35}" effort="${effort}" velocity="${velocity}"/>
     </joint>
 
     <!-- ________________________________________________________________________________ -->
@@ -927,10 +868,12 @@
 
     <!-- ________________________________________________________________________________ -->
 
-    <joint name="joint_lit_finger" type="fixed">
+    <joint name="joint_lit_finger" type="revolute">
         <parent link="hand_link"/>
         <child link="lit_finger_link"/>
         <origin xyz="-0.1075 0.005 -0.004" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-${PI/35}" upper="${PI/35}" effort="${effort}" velocity="${velocity}"/>
     </joint>
 
     <!-- ________________________________________________________________________________ -->
@@ -965,10 +908,12 @@
 
     <!-- ________________________________________________________________________________ -->
 
-    <joint name="joint_ring_finger" type="fixed">
+    <joint name="joint_ring_finger" type="revolute">
         <parent link="hand_link"/>
         <child link="ring_finger_link"/>
         <origin xyz="-0.035 0.005 -0.017" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-${PI/35}" upper="${PI/35}" effort="${effort}" velocity="${velocity}"/>
     </joint>
 
     <!-- ________________________________________________________________________________ -->
@@ -1003,10 +948,12 @@
 
     <!-- ________________________________________________________________________________ -->
 
-    <joint name="joint_mid_finger" type="fixed">
+    <joint name="joint_mid_finger" type="revolute">
         <parent link="hand_link"/>
         <child link="mid_finger_link"/>
         <origin xyz="0.035 0.005 -0.024" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-${PI/35}" upper="${PI/35}" effort="${effort}" velocity="${velocity}"/>
     </joint>
 
     <!-- ________________________________________________________________________________ -->
@@ -1041,10 +988,12 @@
 
     <!-- ________________________________________________________________________________ -->
 
-    <joint name="joint_forefinger" type="fixed">
+    <joint name="joint_forefinger" type="revolute">
         <parent link="hand_link"/>
         <child link="forefinger_link"/>
         <origin xyz="0.105 0.005 -0.016" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-${PI/35}" upper="${PI/35}" effort="${effort}" velocity="${velocity}"/>
     </joint>
 
     <!-- ________________________________________________________________________________ -->
