@@ -1,5 +1,5 @@
-#ifndef ARMBOT_INTERFACE
-#define ARMBOT_INTERFACE
+#ifndef ARM_INTERFACE
+#define ARM_INTERFACE
 
 
 #include "ros/ros.h"
