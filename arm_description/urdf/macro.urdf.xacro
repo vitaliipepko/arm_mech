@@ -1,37 +1,56 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arm">
 
-    <!-- Inertial -->
-    <xacro:macro name="default_inertial" params="mass">
-        <inertial>
-            <mass value="${mass}"/>
-            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
-        </inertial>        
-    </xacro:macro>
 
-    <!-- Materials -->
-    <xacro:macro name="yelloworange_material">
-        <material name="yelloworange" >
-            <color rgba="0.9882352941176471 0.6901960784313725 0.00392156862745098 1.0" />
-        </material>
-    </xacro:macro>
+    <!-- Links -->
+    <xacro:macro name="link" params="name mass mesh_path mesh_material">
+        <link name="${name}">
+            <inertial>
+                <mass value="${mass}"/>
+                <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+            </inertial>        
+    
+            <visual>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                
+                <geometry>
+                    <mesh filename="${mesh_path}" scale="0.3 0.3 0.3"/>
+                </geometry>
+    
+                <xacro:if value="${mesh_material == 'yelloworange'}">
+                    <material name="yelloworange" >
+                        <color rgba="0.9882352941176471 0.6901960784313725 0.00392156862745098 1.0" />
+                    </material>
+                </xacro:if>
 
-    <xacro:macro name="lightgrey_material">
-        <material name="LightGrey">
-            <color rgba="0.7 0.7 0.7 1.0"/>
-        </material>
-    </xacro:macro>
+                <xacro:if value="${mesh_material == 'lightgrey'}">
+                    <material name="lightgrey" >
+                        <color rgba="0.7 0.7 0.7 1.0" />
+                    </material>
+                </xacro:if>
 
-    <xacro:macro name="blue_material">
-        <material name="blue" >
-            <color rgba="0.011764705882352941 0.2627450980392157 0.8745098039215686 1.0" />
-        </material>
-    </xacro:macro>
+                <xacro:if value="${mesh_material == 'blue'}">
+                    <material name="blue" >
+                        <color rgba="0.011764705882352941 0.2627450980392157 0.8745098039215686 1.0" />
+                    </material>
+                </xacro:if>
 
-    <xacro:macro name="red_material">
-        <material name="red" >
-            <color rgba="0.8980392156862745 0.0 0.0 1.0" />
-        </material>
+                <xacro:if value="${mesh_material == 'red'}">
+                    <material name="red" >
+                        <color rgba="0.8980392156862745 0.0 0.0 1.0" />
+                    </material>
+                </xacro:if>
+    
+            </visual>
+    
+            <collision>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                
+                <geometry>
+                    <mesh filename="${mesh_path}" scale="0.3 0.3 0.3"/>
+                </geometry>
+            </collision>
+        </link>
     </xacro:macro>
 
     <!-- Transmission -->
