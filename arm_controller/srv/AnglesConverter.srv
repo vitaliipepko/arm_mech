@@ -8,7 +8,6 @@ float64 thumb
 float64 finger_thumb
 float64 phalanx_thumb_1
 float64 phalanx_thumb_2
-float64 phalanx_thumb_3
 float64 lit_finger
 float64 phalanx_lit_finger_1
 float64 phalanx_lit_finger_2
@@ -36,7 +35,6 @@ float64 thumb
 float64 finger_thumb
 float64 phalanx_thumb_1
 float64 phalanx_thumb_2
-float64 phalanx_thumb_3
 float64 lit_finger
 float64 phalanx_lit_finger_1
 float64 phalanx_lit_finger_2
