@@ -1,0 +1,37 @@
+arm:
+
+  arm_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+      - joint_shoulder_Y
+      - joint_shoulder_X
+      - joint_elbow_Z
+      - joint_elbow_X
+      - joint_wrist_Z
+      - joint_wrist_X
+
+
+  hand_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+      - joint_thumb
+      - joint_finger_thumb
+      - joint_phalanx_thumb_1
+      - joint_phalanx_thumb_2
+      - joint_lit_finger
+      - joint_phalanx_lit_finger_1
+      - joint_phalanx_lit_finger_2
+      - joint_phalanx_lit_finger_3
+      - joint_ring_finger
+      - joint_phalanx_ring_finger_1
+      - joint_phalanx_ring_finger_2
+      - joint_phalanx_ring_finger_3
+      - joint_mid_finger
+      - joint_phalanx_mid_finger_1
+      - joint_phalanx_mid_finger_2
+      - joint_phalanx_mid_finger_3
+      - joint_forefinger
+      - joint_phalanx_forefinger_1
+      - joint_phalanx_forefinger_2
+      - joint_phalanx_forefinger_3
+      
