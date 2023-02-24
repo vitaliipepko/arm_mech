@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  message_generation
 )
 
 
@@ -35,3 +36,12 @@ include_directories(
   include
   ${catkin_INCLUDE_DIRS}
 )
+
+
+add_executable(angles_converter src/angles_converter.cpp)
+add_dependencies(angles_converter ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(angles_converter ${catkin_LIBRARIES})
+
+add_executable(arm_interface_node src/arm_interface.cpp)
+add_dependencies(arm_interface_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(arm_interface_node ${catkin_LIBRARIES})

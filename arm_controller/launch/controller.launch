@@ -1,0 +1,26 @@
+<launch>
+
+    <arg name="is_sim" default="false"/>
+
+    <rosparam file="$(find arm_controller)/config/trajectory_controllers.yaml" command="load"/>
+
+    <rosparam file="$(find arm_controller)/config/joint_state_controller.yaml" command="load"/>
+
+    <param name="robot_description" command="$(find xacro)/xacro $(find arm_description)/urdf/arm.urdf.xacro"/>
+
+    <group unless="$(arg is_sim)">
+        <node pkg="arm_controller" type="angles_converter" name="angles_converter" 
+            respawn="true" output="screen"/>
+
+        <node name="arm_interface_node" pkg="arm_controller" type="arm_interface_node" 
+            ns="/arm" respawn="true" output="screen"/>
+    </group>
+
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" 
+        ns="/arm" args="joint_state_controller arm_controller hand_controller" />
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+        <remap from="/joint_states" to="/arm/joint_states" />
+    </node>
+
+</launch>
